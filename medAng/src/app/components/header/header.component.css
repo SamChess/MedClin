@@ -1,0 +1,18 @@
+.navbar {
+    width: 100%;
+    background-color: #555;
+  }
+  .navbar-brand{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 30px;
+    font-stretch: expanded;
+    font-weight: 500;
+  }
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  } 
