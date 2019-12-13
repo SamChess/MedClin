@@ -21,6 +21,9 @@
     "@angular/platform-browser-dynamic": "~8.2.11",
     "@angular/router": "~8.2.11",
     "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+    "lodash": "^4.17.15",
+    "lodash.isequal": "^4.5.0",
+    "ng2-carouselamos": "^4.1.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
