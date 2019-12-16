@@ -21,7 +21,6 @@ export class BodyComponent implements OnInit {
       { name: 'assets/images/land.jpg'},
     ];
    }
-
   ngOnInit() {
   }
 
