@@ -14,6 +14,9 @@ import { ResponseResetComponent } from './components/password/response-reset/res
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { NewsComponent } from './components/news/news.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { AppRoutingModule } from './app-routing.module';
     ProfileComponent,
     ResponseResetComponent,
     RequestResetComponent,
+    AboutusComponent,
+    NewsComponent,
+    ContactusComponent,
 
   ],
   imports: [

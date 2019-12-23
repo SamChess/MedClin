@@ -5,6 +5,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RequestResetComponent } from './components/password/request-reset/request-reset.component';
 import { ResponseResetComponent } from './components/password/response-reset/response-reset.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { ContactusComponent } from './components/contactus/contactus.component';
+import { NewsComponent } from './components/news/news.component';
 
 const appRoutes: Routes =[
   {
@@ -20,6 +23,21 @@ const appRoutes: Routes =[
   {
     path:'profile',
     component: ProfileComponent
+  }, 
+
+  {
+    path:'aboutus',
+    component: AboutusComponent
+  }, 
+
+  {
+    path:'contactus',
+    component: ContactusComponent
+  }, 
+
+  {
+    path:'news',
+    component: NewsComponent
   }, 
   
   {
