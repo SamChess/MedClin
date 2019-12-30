@@ -1,6 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material';
+import {      
+  MatButtonModule,      
+  MatMenuModule,      
+  MatToolbarModule,      
+  MatIconModule,      
+  MatCardModule,         
+  MatDatepickerModule,      
+  MatDatepicker,      
+  MatNativeDateModule,      
+  MatRadioModule,           
+  MatOptionModule,      
+  MatSlideToggleModule,ErrorStateMatcher,ShowOnDirtyErrorStateMatcher      
+} from '@angular/material'; 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -39,7 +57,29 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     BrowserModule,
     Ng2CarouselamosModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,    
+    FormsModule,      
+    ReactiveFormsModule,      
+    MatButtonModule,      
+    MatMenuModule,      
+    MatToolbarModule,      
+    MatIconModule,      
+    MatCardModule,      
+    BrowserAnimationsModule,      
+    MatFormFieldModule,      
+    MatInputModule,      
+    MatDatepickerModule,      
+    MatNativeDateModule,      
+    MatRadioModule,      
+    MatSelectModule,      
+    MatOptionModule,      
+    MatSlideToggleModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
