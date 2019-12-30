@@ -11,8 +11,7 @@ import {
   MatToolbarModule,      
   MatIconModule,      
   MatCardModule,         
-  MatDatepickerModule,      
-  MatDatepicker,      
+  MatDatepickerModule,          
   MatNativeDateModule,      
   MatRadioModule,           
   MatOptionModule,      
@@ -35,6 +34,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -79,7 +79,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatRadioModule,      
     MatSelectModule,      
     MatOptionModule,      
-    MatSlideToggleModule    
+    MatSlideToggleModule, 
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
