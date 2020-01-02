@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
@@ -17,6 +18,7 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
+    'App\\Http\\Middleware\\CORS' => $baseDir . '/app/Http/Middleware/CORS.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -3979,6 +3981,7 @@ return array(
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\See' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/See.php',
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\Since' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Since.php',
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\Source' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Source.php',
+    'phpDocumentor\\Reflection\\DocBlock\\Tags\\TagWithType' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/TagWithType.php',
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\Throws' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Throws.php',
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\Uses' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Uses.php',
     'phpDocumentor\\Reflection\\DocBlock\\Tags\\Var_' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock/Tags/Var_.php',

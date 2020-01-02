@@ -7,7 +7,10 @@
     
     <mat-card-content>    
         <form #loginForm=ngForm (ngSubmit)="onSubmit()">    
-            <table>    
+            <table> 
+                <div class="alert alert-danger" [hidden]="!error">
+                  {{error}}
+                </div>
                 <tr>    
                     <td>    
                         <mat-form-field class="demo-full-width">    

@@ -4,10 +4,10 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatSelectModule } from '@angular/material';
 import {      
   MatButtonModule,      
-  MatMenuModule,      
+  MatMenuModule,
+  MatSelectModule,
   MatToolbarModule,      
   MatIconModule,      
   MatCardModule,         
@@ -34,7 +34,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { NewsComponent } from './components/news/news.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,6 +55,7 @@ import { HttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     Ng2CarouselamosModule,
     RouterModule,
     AppRoutingModule,
@@ -79,8 +80,8 @@ import { HttpClient } from '@angular/common/http';
     MatRadioModule,      
     MatSelectModule,      
     MatOptionModule,      
-    MatSlideToggleModule, 
-    HttpClient
+    MatSlideToggleModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
