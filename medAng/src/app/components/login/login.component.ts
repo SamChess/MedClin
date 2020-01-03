@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent implements OnInit {
 
-  public form={
+  public form = {
     email:null,
     password:null
 
@@ -37,4 +37,4 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-}
+} 
