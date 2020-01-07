@@ -4,7 +4,8 @@
     <li><a routerLink="contactus"><i class="fa fa-fw fa-envelope"></i> Contact Us </a></li>
     <li><a href="#"><i class="fa fa-fw fa fa-plus-square"></i> Our Services </a></li>
     <li><a routerLink="aboutus"><i class="fa fa-fw fa fa-history"></i> About Us </a></li>
-    <li style="float:right"><a class ="active" routerLink="login"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
+    <li style="float:right"><a class ="active" routerLink="login" *ngIf="!loggedIn"><i class="fa fa-fw fa-sign-in"></i> Login</a></li>
+    <li style="float:right"><a class ="active" routerLink="login" *ngIf="loggedIn"><i class="fa fa-fw fa-sign-in"></i> Logout</a></li>
     <li style="float: right"><a routerLink="profile"><i class="fa fa-fw fa-user"></i> Profile</a></li>
  </ul>
        
