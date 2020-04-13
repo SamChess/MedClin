@@ -1,1 +1,31 @@
-<p>request-reset works!</p>
+
+   
+<mat-card>    
+    <!-- Title of an Card -->    
+    <mat-card-title>    
+            Password Reset 
+    </mat-card-title>    
+    
+    <mat-card-content>    
+        <form #RequestResetForm=ngForm (ngSubmit)="onSubmit()">    
+            <table>    
+                <tr>    
+                    <td colspan="2">     
+                        <mat-form-field class="demo-full-width">    
+                            <input matInput placeholder="Please provide your email" name="email"  [(ngModel)]="form.email" required>    
+                        </mat-form-field>    
+                    </td>
+
+                </tr> 
+                
+                <tr>    
+                    <td colspan="2" class="content-center">    
+                        <button mat-raised-button color="accent" type="submit"
+                        [disabled]="!RequestResetForm.valid">Send password to Email</button>      
+                    </td>    
+                </tr>
+              
+            </table>    
+        </form>    
+    </mat-card-content>    
+</mat-card>   

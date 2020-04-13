@@ -8,46 +8,56 @@ import { ResponseResetComponent } from './components/password/response-reset/res
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { NewsComponent } from './components/news/news.component';
+import { BeforeLoginService } from './services/before-login.service';
+import { AfterLoginService } from './services/after-login.service';
 
 const appRoutes: Routes =[
   {
     path:'login',
-    component: LoginComponent
+    component: LoginComponent,
+    canActivate: [BeforeLoginService]
   }, 
 
   {
     path:'signup',
-    component: SignupComponent
+    component: SignupComponent,
+    canActivate: [BeforeLoginService]
   },  
 
   {
     path:'profile',
-    component: ProfileComponent
+    component: ProfileComponent,
+    canActivate: [AfterLoginService]
   }, 
 
   {
     path:'aboutus',
-    component: AboutusComponent
+    component: AboutusComponent,
+    canActivate: [AfterLoginService]
   }, 
 
   {
     path:'contactus',
-    component: ContactusComponent
+    component: ContactusComponent,
+    canActivate: [AfterLoginService]
   }, 
 
   {
     path:'news',
-    component: NewsComponent
+    component: NewsComponent,
+    canActivate: [AfterLoginService]
   }, 
   
   {
     path:'request-password-reset',
-    component: RequestResetComponent
+    component: RequestResetComponent,
+    canActivate: [BeforeLoginService]
   }, 
   
   {
     path:'response-password-reset',
-    component: ResponseResetComponent
+    component: ResponseResetComponent,
+    canActivate: [BeforeLoginService]
   },  
 
 ];

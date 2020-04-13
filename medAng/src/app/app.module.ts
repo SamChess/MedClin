@@ -4,6 +4,7 @@ import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import {      
   MatButtonModule,      
   MatMenuModule,
@@ -80,10 +81,14 @@ import { HttpClientModule } from '@angular/common/http';
     MatRadioModule,      
     MatSelectModule,      
     MatOptionModule,      
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    SnotifyModule
    
   ],
-  providers: [],
+  providers: [
+    { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
+    SnotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

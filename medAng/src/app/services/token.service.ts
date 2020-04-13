@@ -6,6 +6,7 @@ import { httpFactory } from '@angular/http/src/http_module';
 })
 export class TokenService {
   private iss = {
+    
     login : 'http://localhost:8000/api/login',
     signup : 'http://localhost:8000/api/signup'
   }
